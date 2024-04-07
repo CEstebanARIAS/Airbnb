@@ -1,33 +1,42 @@
 ---
 import Card from "./Card.astro"
 ---
-<div class="text-white justify-center text-center mt-10">
+<div class="text-white justify-center text-center">
         <h1>Bienvenidos al primer <b>AIRBNB</b> en Viracacha, estas listo/a para crear una nueva historia?</h1>
-        <div class="mt-11 mb-6 text-4xl">
+        <div class="mt-28 text-4xl">
             <b>CONOCE NUESTROS PRODUCTOS</b>
         </div>
         
-    <div class="grid grid-cols-3 grid-flow-row mx-40 mt-3">
-        <div class="p-1 ">
+    <div class="grid grid-cols-3 grid-flow-row mx-40 mt-3 mb-3 gap-2">
+        <div class="row-span-2">
+            <Card/ title="CULTURA" body="Descubre la fascinante historia detrás de cada lugar" href="#" src="/bailes.avif">
+        </div> 
+        <div class="">
             <Card/ title="HOTELES" body="Encuentra alojamiento en los destinos más populares de Viracacha" href="#" src="/Hotel.avif">
         </div>
-        <div class="p-1">
+        <div class="">
             <Card/ title="RESTAURANTES" body="Descubre los mejores restaurantes recomendados" href="#" src="/Restaurante.avif">
         </div>
-        <div class="p-1">
+        <div class="">
             <Card/ title="SENDEROS" body="Explora rutas y senderos escénicos para disfrutar de la naturaleza" href="#" src="/sendero.avif">
         </div>
-        <div class="p-1">
+        <div class="">
             <Card/ title="GASTRONOMIA" body="Sumérgete en la cultura culinaria local con nuestra gastronomia" href="#" src="/gastronomia.avif">
         </div>
-        <div class="p-1">
-            <Card/ title="CULTURA" body="Descubre la fascinante historia detrás de cada lugar" href="#" src="/Historia.avif">
-        </div>
-        <div class="p-1">
-            <Card/ title="SOBRE NOSOTROS" body="Conoce más sobre nuestra misión y equipo detrás de Airbnb" href="#" src="/Oficina.avif">
-        </div>
-        <div class="p-1">
-            <Card/ title="TERMINOS Y CONDICIONES" body="Obten información detallada sobre el uso de nuestro servicio" href="#" src="/Conditions.avif">
-        </div>
+        
     </div>
+    <div 
+        class="flex text-white mx-20 my-10 h-24 items-center justify-end rounded-xl bg-gradient-to-t from-green-900 p">
+            <a
+                href="#"
+                class="hover:text-gray-500"
+            >Terminos y Condiciones|
+            </a>
+            <a
+                href="#"
+                class="px-4 hover:text-gray-500"
+            >Sobre Nosotros
+            </a>
+    </div>
+        
 </div>
