@@ -1,12 +1,32 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro"
-import Body from "../components/Body.astro"
+import Card from "../components/Card.astro"
 ---
 
 <Layout title="Airbnb | Viracacha turismo y senderos agrturisticos">
   <main>
-    
-    <Body/>
+    <div class="text-white justify-center text-center">
+        <h1>Bienvenidos al primer <b>AIRBNB</b> en Viracacha, estas listo/a para crear una nueva historia?</h1>
+        <div class="mt-28 text-4xl">
+            <b>CONOCE NUESTROS PRODUCTOS</b>
+        </div>
+    </div>
+    <div class="grid grid-cols-3 grid-flow-row mx-40 mt-3 mb-3 gap-2">
+      <div class="row-span-2">
+          <Card/ title="CULTURA" body="Descubre la fascinante historia detrás de cada lugar" href="#" src="/bailes.avif">
+      </div> 
+      <div class="">
+          <Card/ title="HOTELES" body="Encuentra alojamiento en los destinos más populares de Viracacha" href="#" src="/Hotel.avif">
+      </div>
+      <div class="">
+          <Card/ title="RESTAURANTES" body="Descubre los mejores restaurantes recomendados" href="#" src="/Restaurante.avif">
+      </div>
+      <div class="">
+          <Card/ title="SENDEROS" body="Explora rutas y senderos escénicos para disfrutar de la naturaleza" href="#" src="/sendero.avif">
+      </div>
+      <div class="">
+          <Card/ title="GASTRONOMIA" body="Sumérgete en la cultura culinaria local con nuestra gastronomia" href="#" src="/gastronomia.avif">
+      </div>
+    </div>
   </main>
 </Layout>
