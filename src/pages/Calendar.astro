@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+---
+<script type="module" src="https://unpkg.com/cally"></script>
+
+<Layout title="Airbnb| Viracacha 'Agenda Tu aventura'">
+   
+    <div class="grid">
+        <calendar-range months="2">
+          <div class="grid">
+            <calendar-month class=""/>
+            <calendar-month offset="1"/>
+          </div>
+        </calendar-range>
+    </div>
+    
+</Layout>
+
+<style>
+    .grid{
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #ffffff;
+    }
+    calendar-month{
+        --color-accent: #854ef7;
+        --color-text-on-accent: #ffffff;
+
+        &::part(range-inner){
+            border-radius: 0;
+            background-color: #854ef7;
+        }
+    }
+    
+</style>
